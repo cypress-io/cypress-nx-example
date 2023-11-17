@@ -18,7 +18,10 @@
           "devServerTarget": "react-example:serve:production"
         },
         "ci": {
-          "devServerTarget": "react-example:serve-static"
+          "devServerTarget": "react-example:serve-static",
+          "env": {
+            "CYPRESS_RECORD_KEY": "59fe1c15-5ed1-4621-9c45-439fe2bee8e0"
+          }
         }
       }
     },
