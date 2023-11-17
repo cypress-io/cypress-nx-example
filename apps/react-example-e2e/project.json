@@ -11,17 +11,15 @@
         "testingType": "e2e",
         "devServerTarget": "react-example:serve",
         "record": true,
-        "parallel": true
+        "parallel": true,
+        "key": "59fe1c15-5ed1-4621-9c45-439fe2bee8e0"
       },
       "configurations": {
         "production": {
           "devServerTarget": "react-example:serve:production"
         },
         "ci": {
-          "devServerTarget": "react-example:serve-static",
-          "env": {
-            "CYPRESS_RECORD_KEY": "59fe1c15-5ed1-4621-9c45-439fe2bee8e0"
-          }
+          "devServerTarget": "react-example:serve-static"
         }
       }
     },

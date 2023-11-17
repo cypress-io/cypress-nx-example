@@ -81,14 +81,8 @@
         "devServerTarget": "react-example:build",
         "skipServe": true,
         "record": true,
-        "parallel": true
-      },
-      "configurations": {
-        "ci": {
-          "env": {
-            "CYPRESS_RECORD_KEY": "59fe1c15-5ed1-4621-9c45-439fe2bee8e0"
-          }
-        }
+        "parallel": true,
+        "key": "59fe1c15-5ed1-4621-9c45-439fe2bee8e0"
       }
     }
   },
