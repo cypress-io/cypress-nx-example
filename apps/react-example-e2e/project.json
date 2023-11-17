@@ -19,7 +19,9 @@
           "devServerTarget": "react-example:serve:production"
         },
         "ci": {
-          "devServerTarget": "react-example:serve-static"
+          "devServerTarget": "react-example:serve-static",
+          "record": true,
+          "parallel": true
         }
       }
     },

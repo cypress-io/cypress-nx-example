@@ -79,10 +79,13 @@
         "cypressConfig": "apps/react-example/cypress.config.ts",
         "testingType": "component",
         "devServerTarget": "react-example:build",
-        "skipServe": true,
-        "record": true,
-        "parallel": true,
-        "key": "59fe1c15-5ed1-4621-9c45-439fe2bee8e0"
+        "skipServe": true
+      },
+      "configurations": {
+        "ci": {
+          "record": true,
+          "parallel": true
+        }
       }
     }
   },
