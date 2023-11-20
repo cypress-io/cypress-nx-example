@@ -48,10 +48,10 @@ jobs:
           command: npx nx affected --base=$NX_BASE --head=$NX_HEAD --target=build --parallel=3
       - run:
           name: Run E2E
-          command: npx nx affected --base=$NX_BASE --head=$NX_HEAD --target=e2e --parallel=3 --ci
+          command: npx nx affected --base=$NX_BASE --head=$NX_HEAD --target=e2e --parallel=3 --ci –ciBuildId=$CI_PIPELINE_ID
       - run:
           name: Run CT
-          command: npx nx affected --base=$NX_BASE --head=$NX_HEAD --target=component-test --parallel=3 --ci
+          command: npx nx affected --base=$NX_BASE --head=$NX_HEAD --target=component-test --parallel=3 --ci –ciBuildId=$CI_PIPELINE_ID
       - run:
           name: Stop all agents
           command: npx nx-cloud stop-all-agents
